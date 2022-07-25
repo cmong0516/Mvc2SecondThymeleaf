@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!--thymeleaf 선언-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>컨텐츠에 데이터 출력하기</h1>
+<ul>
+<!--    model 을 통해 전달받은 data 출력-->
+<!--    타임리프 라고 입력 했지만 data 의 값이 생겨서 data 값만 출력-->
+    <li>th:text 사용 <span th:text="${data}">타임리프</span></li>
+    <li>컨텐츠 안에서 직접 출력하기 = [[${data}]]</li>
+</ul>
+</body>
+</html>
